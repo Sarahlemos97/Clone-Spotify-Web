@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+            <div class="sidebar__logo">
+                <img src="imagens/Spotify_Logo_RGB_White.png">
+
+            </div><!--sidebar--logo-->
+            <div class="sidebar__menu">
+                <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i>Início</a>
+                <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <a href="#"><i class="fas fa-database"></i>Biblioteca</a>
+            </div><!--sidebar--menu-->
+
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+                <div class="sidebar__menu__item">
+                <div class="sidebar__menu__item__componente">+</div>
+                <span>Criar Playlist</span>
+                </div><!--sidebar--menu--item-->
+                <div class="sidebar__menu__item">
+                <img src="imagens/Musicas curtidas.jpg">
+                <span>Músicas Curtidas</span>
+                </div><!--sidebar--menu--item-->
+            </div><!--sidebar--menu-->
+            
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div><!--sidebar--playlists-->
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div><!--sidebar--playlists-->
+        </div><!--wraper-->
+    </div> <!--sidebar-->
+
+    <div class="main">
+        <div class="main-wraper">
+            <div class="main__row__title2"><h2>Minhas Músicas</h2>
+                <div class="main__row"> 
+                    <div class="main__col" data-image="imagens/Mamma Mia.jpg" data-artist="Mamma Mia" data-song="Dancing Queen" data-file="audio/Mamma Mia! - Dancing Queen.mp3">
+                        <img src="imagens/Taylor.jpg">
+                        <h3>All You Had To Do Was Stay (Taylor's Version)</h3>
+                        <p>Taylor Swift</p>
+                    </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Mamma Mia.jpg">
+                            <h3>Dancing Queen</h3>
+                            <p>Mamma Mia!</p>
+                        </div><!--main--col-->
+            <div class="main__row__title"><h2>Paradas</h2>
+                    <div class="main__row">
+                         <div class="main__col">
+                            <img src="imagens/All Out 2010s.jpg">
+                            <h3>All Out 2010s</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/All Out 80s.jpg">
+                            <h3>All Out 80s</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Chill Hits.jpg">
+                            <h3>Chill Hits</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/DayDreamer.jpg">
+                            <h3>DayDreamer</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Mega Hit Mix.jpg">
+                            <h3>Mega Hit Mix</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Mega Hit Mix.jpg">
+                            <h3>Mega Hit Mix</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col--> 
+            <div class="main__row__title2"><h2>Seus Mixes</h2>
+                <div class="main__row">
+                    <div class="main__col">
+                        <img src="imagens/RapCaviar.jpg">
+                        <h3>RapCaviar</h3>
+                        <p>Descrição dos artistas</p>
+                    </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Rock Classics.jpg">
+                            <h3>Rock Classics</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Sleep.jpg">
+                            <h3>Sleep</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Today's Top Hits.jpg">
+                            <h3>Today's Tp Hits</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col-->
+                        <div class="main__col">
+                            <img src="imagens/Viva Latino.jpg">
+                            <h3>Viva Latino</h3>
+                            <p>Descrição dos artistas</p>
+                        </div><!--main--col--> 
+                        <div class="main__col">
+                            <img src="imagens/Mega Hit Mix.jpg">
+                            <h3>Mega Hit Mix</h3>
+                            <p>Descrição dos artistas</p>  
+                        </div><!--main--col-->
+
+                </div><!--main--row-->
+
+             </div><!--main--row--title-->
+
+          </div><!--main--row-->  
+
+        </div><!--main--wraper-->
+
+    </div><!--main-->
+
+    <div class="player">
+        <div class="player__artist">
+            </div><!--player--artist-->
+            <div class="player__control">
+                <div class="player__control__buttons">
+                    <a href=""><i class="fas fa-backward"></i></a>
+                    <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                    <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                    <a href=""><i class="fas fa-forward"></i></a>
+                    </div><!--player--control--buttons-->
+                    <div class="player__control__progress">
+                    <div style="width: 90%;" class="player__control__progress_2">
+                    </div><!--player--control--progress--2-->
+                </div><!--player--control--progress-->
+            </div><!--player--control-->
+            </div><!--player-->
+
+        <audio id="audioplayer" controls="" style="position: absolute;left: 0; top: 0; z-index: -999; opacity: 0;" >
+            <source src="audio/Mamma Mia! - Dancing Queen.mp3">
+        </audio>
+
+    <script src="js/all.min.js"></script>
+
+</body>
+</html>
