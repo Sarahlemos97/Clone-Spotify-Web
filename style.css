@@ -209,6 +209,7 @@ html,body{height: 100%;}
 
 .player__control__progress{
     width: 100%;
+    cursor: pointer;
     max-width: 600px;
     height: 5px;
     margin-top: 10px;
@@ -226,6 +227,25 @@ html,body{height: 100%;}
     height: 7px;
     border-radius: 8px;
     background-color: white;
+    cursor: pointer;
+}
+
+.total__progresso {
+    font-size: 12px;
+}
+
+.current__progresso{
+    font-size: 12px;
+}
+
+section#volume_bar input#volume{
+    width: 95px;
+    cursor: pointer;
+    height: 5px;
+}
+
+section#volume_bar{
+    margin-top: 21px;
 }
 
 @media screen and (max-width: 1700px){

@@ -135,25 +135,35 @@
 
     </div><!--main-->
 
+            <!--BARRA DE PLAYER-->
+
+    <section id="playerBtn">      
     <div class="player">
         <div class="player__artist">
             </div><!--player--artist-->
             <div class="player__control">
                 <div class="player__control__buttons">
                     <a href=""><i class="fas fa-backward"></i></a>
-                    <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
-                    <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                    <a id="pauseBtn" href="#" onclick="pauseAudio()"><i class="far fa-pause-circle"></i></a>
+                    <a id="playBtn" href="#" onclick="playAudio()"><i class="far fa-play-circle"></i></a>
                     <a href=""><i class="fas fa-forward"></i></a>
-                    </div><!--player--control--buttons-->
+                </div><!--player--control--buttons-->
+                    <span class="current__progresso" id="current-duration" style="color: white; padding: 1rem;">00:00</span>
                     <div class="player__control__progress">
-                    <div style="width: 90%;" class="player__control__progress_2">
-                    </div><!--player--control--progress--2-->
-                </div><!--player--control--progress-->
+                        <input type="range" min="0" max="100" step="1" class="player__control__progress_2" id="progressbar">
+                    </div><!--player--control--progress-->
+                    <span class="total__progresso" id="current-duration" style="color: white; padding: 1rem;">00:00</span> 
             </div><!--player--control-->
-            </div><!--player-->
+            <section id="volume_bar">
+                <i id="vol_icon" class="volume_progress"></i>
+                <input type="range" id="volume" min="0" max="100" step="1">
+            </section>   
+    </div><!--player--> 
+</section>
+                                    <!--MÚSICA TESTE-->
 
         <audio id="audioplayer" controls="" style="position: absolute;left: 0; top: 0; z-index: -999; opacity: 0;" >
-            <source src="audio/Mamma Mia! - Dancing Queen.mp3">
+            <source src="audio/Mamma Mia! - Dancing Queen.mp3" type="audio/mpeg">
         </audio>
 
     <script src="js/all.min.js"></script>

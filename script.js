@@ -1,32 +1,10 @@
-var audioPlayer = document.getElementById('audioplayer');
-var loaded = false;
-
-var playBtn = document.getElementById('playBtn');
-var pauseBtn = document.getElementById('pauseBtn');
-
-pauseBtn.addEventListener('click',(e)=>{
-    e.preventDefault();
-
-    playBtn.style.display = "inline";
-    pauseBtn.style.display = "none";
-
-    return false;
-});
-
-const playSong = (file) => {
-
-    if(loaded == false){
-        audioPlayer.innerHTML = `<source src="`+file+`" type="audio/mp3"`;
-        loaded = true;
-    }
-    audioPlayer.play();
-
-    pauseBtn.style.display = "inline";
-    playBtn.style.display = "none";
+function playAudio() {
+    let x = document.getElementById("audioplayer");
+    x.play();
+}
+function pauseAudio() {
+    let x = document.getElementById("audioplayer");
+    x.pause();
 }
 
-document.querySelectorAll('.main__col').forEach(item =>{
-    item.addEventListener('click',event=>{
-        alert('clicado');
-    })
-})
+const playerBtn = document.querySelector("#playerBtn");
